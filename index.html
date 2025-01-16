@@ -10,7 +10,7 @@
 				font-family: "Comic Sans MS", "Comic Sans", cursive;
 			}
 			table, th, td {
-				border: 4px solid black;
+				border: 1px solid black;
 				padding: 3px;
 				text-align: center
 
@@ -26,6 +26,7 @@
 				text-align: center;
 				height: auto;
 				width: 250px;
+				font-family: 'Times New Roman', Times, serif;
 			  }
 			  
 			  h1{
@@ -36,7 +37,7 @@
 				float: right;
 			  }
 			  .NotBusy{
-				background-color: rgb(86, 86, 255);
+				background-color: rgb(255, 86, 238);
 			  }
 			  .busy{
 				background-color: rgb(161, 214, 82);
@@ -54,9 +55,14 @@
 			  }
 			  a{
 				text-decoration: none;
+				color:black;
 			  }
 			  a:hover{
 				text-decoration: underline;
+				color:chocolate;
+			  }
+			  ol{
+				font-family: 'Times New Roman', Times, serif;
 			  }
 
 		</style>
@@ -67,14 +73,14 @@
 
     <body>
 		<h1>McKay Rencher</h1>
-		<img src="ImageOfMe.jpg" width="25%" height="atuo" alt="this is just a photo of me">
+		<img src="ImageOfMe.jpg" width="400px" height="atuo" alt="this is just a photo of me">
 
         <h2>Peronal Info</h2>
 		<ul>
-			<li><strong>Major: </strong>Computer seinces batchlers degree</li>
+			<li><strong>Major: </strong>computer science bachelor degree</li>
 			<li><strong>HighSchool: </strong>Springville HighSchool graduated 2020</li>
 			<li><strong>current year at UVU: </strong>Sophomore</li>
-			<li><strong>favorite ice cream: </strong> fan of all icecream short of mint but I think chocolate would be a good estmate</li>
+			<li><strong>favorite ice cream: </strong> fan of all icecream short of mint but I think chocolate is my favorite</li>
 		</ul>
 		<h2>Favorite Books</h2>
 		<ol>
@@ -85,10 +91,11 @@
 			<li><em>Fahrenheit 451: </em><a href="https://en.wikipedia.org/wiki/Ray_Bradbury">Ray Bradbury</a></li>
 		</ol>
 		<h2>A Haiku I Wrote</h2>
-		<p style="width: 25%;">I spend may of my night studing at a bed by a window sill. I is a place of peace and comfort to me. Much of my time can seem to fade away on a rainy night</p>
+		<p style="width: 25%;">I spend may of my night studing at a bed by a window sill. It is a place of peace and comfort to me. Much of my time can seem to fade away on a rainy night</p>
 
 		<em>
 			<div class="center">
+				<h2>Window sill</h2>
 				Slowly listening <br>
 				Raindrops hitting the many tiles  <br>
 				Tonight forgotten  <br>
@@ -98,7 +105,7 @@
 		<div style="width: 45%;">
 			<p>I have a love for video games. even at a young age. It has continued on to the modern day. I love all kinds but have a particular love for rouge likes and platformers. My love of video games impacted my decision to go into computer science</p>
 			<p>I have a love for music. I got a lot of my current taste from my older siblings so I have ended up listening to a lot of alternative music. The first band I got into was an at the time up-and-coming band called Twenty-one Pilots. I continue my love for music today with many other bands </p>
-			<p>I also have a love for coding a problem solving. I am happy a field like this exists as it is something I enjoy doing. I have a little bit of practice coding games for fun which has honestly helped 
+			<p>I also have a love for coding a problem solving. I am happy a field like this exists as it is something I enjoy doing. I have a little bit of practice coding games for fun which has honestly helped. 
 			</p>
 
 		</div>
@@ -115,11 +122,11 @@
 			</tr>
 			<tr>
 				<td class="white">10:00</td>
-				<td rowspan="99" class="NotBusy"></td>
+				<td rowspan="2" style="background-color: aqua;">working out</td>
 				<td rowspan="2"  class="busy">Ethics and Values</td>
-				<td rowspan="99" class="NotBusy"></td>
+				<td rowspan="2" style="background-color: aqua;">working out</td>
 				<td rowspan="2" class="busy">Ethics and Values</td>
-				<td rowspan="99" class="NotBusy"></td>
+				<td rowspan="2" style="background-color: aqua;">working out</td>
 			</tr>
 			<tr>
 				<td class="white">10:30</td>
@@ -127,8 +134,11 @@
 			</tr>
 			<tr>
 				<td class="white">11:00</td>
-				<td rowspan="4" class="NotBusy"></td>
-				<td rowspan="4" class="NotBusy"></td>
+				<td rowspan="3" style="background-color: red;">Food</td>
+				<td rowspan="4" class="NotBusy">Free time</td>
+				<td rowspan="3" style="background-color: red;">Food</td>
+				<td rowspan="4" class="NotBusy">Free time</td>
+				<td rowspan="3" style="background-color: red;">Food</td>
 			</tr>
 			<tr>
 				<td class="white">11:30</td>
@@ -140,12 +150,18 @@
 			</tr>
 			<tr>
 				<td class="white">12:30</td>
+				<td rowspan="5"  style="background-color: chocolate;">Homework</td>
+				<td rowspan="5"  style="background-color: chocolate;">Homework</td>
+				<td rowspan="5" style="background-color: chocolate;">Homework</td>
 				
 			</tr>
 			<tr>
 				<td class="white">1:00</td>
-				<td rowspan="3" class="busy">Data Structures and Algorithms</td>
-				<td rowspan="3" class="busy">Data Structures and Algorithms</td>
+				
+				<td rowspan="3" style="background-color: coral;">Data Structures and Algorithms</td>
+				
+				<td rowspan="3" style="background-color: coral;">Data Structures and Algorithms</td>
+				
 			</tr>
 			<tr>
 				<td class="white">1:30</td>
@@ -157,13 +173,15 @@
 			</tr>
 			<tr>
 				<td class="white">2:30</td>
-				<td rowspan="3" class="busy">Web Development</td>
-				<td rowspan="3" class="busy">Web Development</td>
+				<td rowspan="3" style="background-color:burlywood;">Web Development</td>
+				<td rowspan="3" style="background-color:burlywood;">Web Development</td>
 				
 			</tr>
 			<tr>
 				<td class="white">3:30</td>
-				
+				<td rowspan="99" class="NotBusy">FreeTime</td>
+				<td rowspan="99" class="NotBusy">FreeTime</td>
+				<td rowspan="99" class="NotBusy">FreeTime</td>
 			</tr>
 			<tr>
 				<td class="white">4:00</td>
@@ -171,8 +189,8 @@
 			</tr>
 			<tr>
 				<td class="white">4:30</td>
-				<td class="NotBusy"></td>
-				<td class="NotBusy"></td>
+				<td class="NotBusy">Free time</td>
+				<td class="NotBusy">Free time</td>
 			</tr>
 
 
