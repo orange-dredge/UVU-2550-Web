@@ -4,11 +4,17 @@
         <title>About McKay Rencher</title>
 		<style>
 			body{
-				background-image: url(justNormal.jpg);
-				background-size: cover;
+				background-image: url(Walrus.jpg);
+				background-size: auto;
+				color: black;
+				font-family: "Comic Sans MS", "Comic Sans", cursive;
 			}
 			table, th, td {
-				border: 1px solid black;
+				border: 4px solid black;
+				padding: 3px;
+				text-align: center
+
+
 			  }
 			  .inportant{
 				font-weight:bold;
@@ -24,32 +30,59 @@
 			  
 			  h1{
 				font-family: "Comic Sans MS", "Comic Sans", cursive;
+				
 			  }
 			  img{
-				float: right
-
-				;
+				float: right;
 			  }
+			  .NotBusy{
+				background-color: rgb(86, 86, 255);
+			  }
+			  .busy{
+				background-color: rgb(161, 214, 82);
+			  }
+			  .white{
+				background-color: rgb(208, 199, 187);
+			  }
+			  table{
+				width: 50%;
+				/*border-collapse: collapse;*/
+				border-spacing: auto;
+			  }
+			  td{
+				width: 16%;
+			  }
+			  a{
+				text-decoration: none;
+			  }
+			  a:hover{
+				text-decoration: underline;
+			  }
+
 		</style>
+		
     </head>
-	<h1>McKay Rencher</h1>
-	<img src="ImageOfMe.jpg" width=" 300" alt="this is just a photo I need to replace later">
+	
+	
 
     <body>
+		<h1>McKay Rencher</h1>
+		<img src="ImageOfMe.jpg" width="25%" height="atuo" alt="this is just a photo of me">
+
         <h2>Peronal Info</h2>
 		<ul>
-			<li><strong>major: </strong>Computer seinces batchlers degree</li>
+			<li><strong>Major: </strong>Computer seinces batchlers degree</li>
 			<li><strong>HighSchool: </strong>Springville HighSchool graduated 2020</li>
 			<li><strong>current year at UVU: </strong>Sophomore</li>
 			<li><strong>favorite ice cream: </strong> fan of all icecream short of mint but I think chocolate would be a good estmate</li>
 		</ul>
 		<h2>Favorite Books</h2>
 		<ol>
-			<li><em>Project Hail Mary: </em><u>Andy Weir</u></li>
-			<li><em>Mistborn: </em><u>Brandon Sanderson</u></li>
-			<li><em>House of Leaves: </em><u>Mark Z. Danielewski</u></li>
-			<li><em>The Martian: </em><u>Andy Weir</u></li>
-			<li><em>Fahrenheit 451: </em><u>Ray Bradbury</u></li>
+			<li><em>Project Hail Mary: </em><a href="https://andyweirauthor.com/">Andy Weir</a></li>
+			<li><em>ender's game: </em><a href="http://www.orsonscottcard.com/">orson scott card</a></li>
+			<li><em>House of Leaves: </em><a href="https://www.markzdanielewski.com/about">Mark Z. Danielewski</a></li>
+			<li><em>The Martian: </em><a href="https://andyweirauthor.com/">Andy Weir</a></li>
+			<li><em>Fahrenheit 451: </em><a href="https://en.wikipedia.org/wiki/Ray_Bradbury">Ray Bradbury</a></li>
 		</ol>
 		<h2>A Haiku I Wrote</h2>
 		<p style="width: 25%;">I spend may of my night studing at a bed by a window sill. I is a place of peace and comfort to me. Much of my time can seem to fade away on a rainy night</p>
@@ -62,79 +95,84 @@
 			</div>
 		</em>
 		<h2>Personal Interest</h2>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dignissimos quas laborum iusto vel esse officiis? Architecto sequi autem dicta?</p>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dignissimos quas laborum iusto vel esse officiis? Architecto sequi autem dicta?</p>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore dignissimos quas laborum iusto vel esse officiis? Architecto sequi autem dicta?</p>
+		<div style="width: 45%;">
+			<p>I have a love for video games. even at a young age. It has continued on to the modern day. I love all kinds but have a particular love for rouge likes and platformers. My love of video games impacted my decision to go into computer science</p>
+			<p>I have a love for music. I got a lot of my current taste from my older siblings so I have ended up listening to a lot of alternative music. The first band I got into was an at the time up-and-coming band called Twenty-one Pilots. I continue my love for music today with many other bands </p>
+			<p>I also have a love for coding a problem solving. I am happy a field like this exists as it is something I enjoy doing. I have a little bit of practice coding games for fun which has honestly helped 
+			</p>
+
+		</div>
+		
 		<h2>Class schedule</h2>
 		<Table>
 			<tr>
-				<td></td>
-				<th>Monday</th>
-				<th>tuesday</th>
-				<th>Wensday</th>
-				<th>thursday</th>
-				<th>friday</th>
+				<td class="white"></td>
+				<th class="white">Monday</th>
+				<th class="white">tuesday</th>
+				<th class="white">Wensday</th>
+				<th class="white">thursday</th>
+				<th class="white">friday</th>
 			</tr>
 			<tr>
-				<td>10:00</td>
-				<td rowspan="99" class="inportant"></td>
-				<td rowspan="2" >Ethics and Values</td>
-				<td rowspan="99" class="inportant"></td>
-				<td rowspan="2">Ethics and Values</td>
-				<td rowspan="99" class="inportant"></td>
+				<td class="white">10:00</td>
+				<td rowspan="99" class="NotBusy"></td>
+				<td rowspan="2"  class="busy">Ethics and Values</td>
+				<td rowspan="99" class="NotBusy"></td>
+				<td rowspan="2" class="busy">Ethics and Values</td>
+				<td rowspan="99" class="NotBusy"></td>
 			</tr>
 			<tr>
-				<td>10:30</td>
+				<td class="white">10:30</td>
 				
 			</tr>
 			<tr>
-				<td>11:00</td>
-				<td rowspan="4"></td>
-				<td rowspan="4"></td>
+				<td class="white">11:00</td>
+				<td rowspan="4" class="NotBusy"></td>
+				<td rowspan="4" class="NotBusy"></td>
 			</tr>
 			<tr>
-				<td>11:30</td>
+				<td class="white">11:30</td>
 				
 			</tr>
 			<tr>
-				<td>12:00</td>
+				<td class="white">12:00</td>
 				
 			</tr>
 			<tr>
-				<td>12:30</td>
+				<td class="white">12:30</td>
 				
 			</tr>
 			<tr>
-				<td>1:00</td>
-				<td rowspan="3">Data Structures and Algorithms</td>
-				<td rowspan="3">Data Structures and Algorithms</td>
+				<td class="white">1:00</td>
+				<td rowspan="3" class="busy">Data Structures and Algorithms</td>
+				<td rowspan="3" class="busy">Data Structures and Algorithms</td>
 			</tr>
 			<tr>
-				<td>1:30</td>
+				<td class="white">1:30</td>
 				
 			</tr>
 			<tr>
-				<td>2:00</td>
+				<td class="white">2:00</td>
 
 			</tr>
 			<tr>
-				<td>2:30</td>
-				<td rowspan="3">Web Development</td>
-				<td rowspan="3">Web Development</td>
+				<td class="white">2:30</td>
+				<td rowspan="3" class="busy">Web Development</td>
+				<td rowspan="3" class="busy">Web Development</td>
 				
 			</tr>
 			<tr>
-				<td>3:30</td>
+				<td class="white">3:30</td>
 				
 			</tr>
 			<tr>
-				<td>4:00</td>
+				<td class="white">4:00</td>
 				
 			</tr>
 			<tr>
-				<td>4:30</td>
-				<td></td>
-				<td></td>
+				<td class="white">4:30</td>
+				<td class="NotBusy"></td>
+				<td class="NotBusy"></td>
 			</tr>
 
 
