@@ -18,78 +18,15 @@ Reflection: I have some mild experience with web development so this website was
 <html>
     <head>
         <title>About McKay Rencher</title>
-		<style>
-			body{
-				background-image: url(Walrus.jpg);
-				background-size: auto;
-				color: black;
-				font-family: "Comic Sans MS", "Comic Sans", cursive;
-			}
-			table, th, td {
-				border: 1px solid black;
-				padding: 3px;
-				text-align: left;
-				margin: 0px;
-				vertical-align:top;
-
-			  }
-			  .inportant{
-				font-weight:bold;
-				
-				
-
-			  }
-			  .center{
-				text-align: center;
-				height: auto;
-				width: 250px;
-				font-family: 'Times New Roman', Times, serif;
-			  }
-			  
-			  h1{
-				font-family: "Comic Sans MS", "Comic Sans", cursive;
-				
-			  }
-			  img{
-				float: right;
-			  }
-			  .NotBusy{
-				background-color: rgb(255, 86, 238);
-			  }
-			  .busy{
-				background-color: rgb(161, 214, 82);
-			  }
-			  .white{
-				background-color: rgb(208, 199, 187);
-			  }
-			  table{
-				width: 50%;
-				/*border-collapse: collapse;*/
-				border-spacing: auto;
-			  }
-			  td{
-				width: 16%;
-			  }
-			  a{
-				text-decoration: none;
-				color:black;
-			  }
-			  a:hover{
-				text-decoration: underline;
-				color:chocolate;
-			  }
-			  ol{
-				font-family: 'Times New Roman', Times, serif;
-			  }
-
-		</style>
-		
+		<link href="MyWebpage.css" rel="stylesheet">
     </head>
 	
 	
 
     <body>
+	<div class="page">
 		<h1>McKay Rencher</h1>
+		<hr>
 		<img src="ImageOfMe.jpg" width="400px" height="atuo" alt="this is just a photo of me">
 
         <h2>Peronal Info</h2>
@@ -108,7 +45,7 @@ Reflection: I have some mild experience with web development so this website was
 			<li><em>Fahrenheit 451: </em><a href="https://en.wikipedia.org/wiki/Ray_Bradbury">Ray Bradbury</a></li>
 		</ol>
 		<h2>A Haiku I Wrote</h2>
-		<p style="width: 25%;">I spend may of my night studing at a bed by a window sill. It is a place of peace and comfort to me. Much of my time can seem to fade away on a rainy night</p>
+		<p>I spend may of my night studing at a bed by a window sill. It is a place of peace and comfort to me. Much of my time can seem to fade away on a rainy night</p>
 
 		<em>
 			<div class="center">
@@ -119,7 +56,7 @@ Reflection: I have some mild experience with web development so this website was
 			</div>
 		</em>
 		<h2>Personal Interest</h2>
-		<div style="width: 45%;">
+		<div class="hobbies">
 			<p>I have a love for video games. even at a young age. It has continued on to the modern day. I love all kinds but have a particular love for rouge likes and platformers. My love of video games impacted my decision to go into computer science</p>
 			<p>I have a love for music. I got a lot of my current taste from my older siblings so I have ended up listening to a lot of alternative music. The first band I got into was an at the time up-and-coming band called Twenty-one Pilots. I continue my love for music today with many other bands </p>
 			<p>I also have a love for coding a problem solving. I am happy a field like this exists as it is something I enjoy doing. I have a little bit of practice coding games for fun which has honestly helped. 
@@ -139,11 +76,11 @@ Reflection: I have some mild experience with web development so this website was
 			</tr>
 			<tr>
 				<td class="white">10:00</td>
-				<td rowspan="2" style="background-color: aqua;">working out</td>
+				<td rowspan="2" class="workingout">working out</td>
 				<td rowspan="2"  class="busy">Ethics and Values</td>
-				<td rowspan="2" style="background-color: aqua;">working out</td>
+				<td rowspan="2" class="workingout">working out</td>
 				<td rowspan="2" class="busy">Ethics and Values</td>
-				<td rowspan="2" style="background-color: aqua;">working out</td>
+				<td rowspan="2" class="workingout">working out</td>
 			</tr>
 			<tr>
 				<td class="white">10:30</td>
@@ -151,11 +88,11 @@ Reflection: I have some mild experience with web development so this website was
 			</tr>
 			<tr>
 				<td class="white">11:00</td>
-				<td rowspan="3" style="background-color: red;">Food</td>
+				<td rowspan="3" class="food">Food</td>
 				<td rowspan="4" class="NotBusy">Free time</td>
-				<td rowspan="3" style="background-color: red;">Food</td>
+				<td rowspan="3" class="food">Food</td>
 				<td rowspan="4" class="NotBusy">Free time</td>
-				<td rowspan="3" style="background-color: red;">Food</td>
+				<td rowspan="3" class="food">Food</td>
 			</tr>
 			<tr>
 				<td class="white">11:30</td>
@@ -167,9 +104,9 @@ Reflection: I have some mild experience with web development so this website was
 			</tr>
 			<tr>
 				<td class="white">12:30</td>
-				<td rowspan="5"  style="background-color: chocolate;">Homework</td>
-				<td rowspan="5"  style="background-color: chocolate;">Homework</td>
-				<td rowspan="5" style="background-color: chocolate;">Homework</td>
+				<td rowspan="5"  class="homework">Homework</td>
+				<td rowspan="5"  class="homework">Homework</td>
+				<td rowspan="5" class="homework">Homework</td>
 				
 			</tr>
 			<tr>
@@ -225,6 +162,7 @@ Reflection: I have some mild experience with web development so this website was
         
         <p>This paragraph is introducting the html design. &lt;table&gt;</p>
         <img src="images/Dog.jpeg">-->
+		</div>
     </body>
 
 </html>

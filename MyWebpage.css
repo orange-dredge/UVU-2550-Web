@@ -1,0 +1,151 @@
+body{
+	background-image: url(Ferret.webp);
+  background-color: #3B6790;
+	background-size: cover;
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;    margin: 5px;
+  margin-right: 0;
+  background-attachment: fixed;
+  
+    
+}
+table, th, td {
+	border-collapse: collapse;
+	padding: 3px;
+	text-align: center;
+	margin: 0px;
+	height: 5%;
+  border-bottom: 1px solid black;
+
+  }
+  table{
+    
+  }
+  .inportant{
+	font-weight:bold;
+	
+	
+
+  }
+  .center{
+	text-align: center;
+	height: auto;
+	width: 250px;
+	font-family: 'Times New Roman', Times, serif;
+    background-color: #4C7B8B;
+    padding-right: 100%;
+    padding-bottom:2em;
+    
+  }
+  
+  h1{
+	font-family: "Segoe UI", "Segoe UI", cursive;
+    width: fit-content;
+    font-size: 30pt;
+    padding-bottom: 0px;
+    margin-bottom: 1px;
+	
+  }
+  h2{
+    background-color: #23486A;
+    margin: 0;
+    box-shadow: -2px -2px;
+    z-index: 1;
+    position:relative
+    
+  }
+  .center h2{
+    background-color: auto;
+    text-align: center;
+    width: fit-content;
+    margin-left: 25%;
+    box-shadow: none;
+    border:none;
+  }
+  img{
+	float: right;
+    display: block;
+    background-color: #EFB036;
+    padding: 1em;
+    width: 300px;
+    
+    
+    margin-right: 0;
+    position: relative;
+    z-index: 2;
+    
+
+  }
+  .NotBusy{
+	background-color: rgb(255, 86, 238);
+  }
+  .busy{
+	background-color: rgb(161, 214, 82);
+  }
+  .white{
+	background-color: rgb(208, 199, 187);
+  }
+  table{
+	width: 50%;
+	/*border-collapse: collapse;*/
+	border-spacing: auto;
+  }
+  td{
+	width: 16%;
+  }
+  a{
+	text-decoration: none;
+	color:black;
+  }
+  a:hover{
+	text-decoration: underline;
+	color:chocolate;
+  }
+  ol{
+	font-family: 'Times New Roman', Times, serif;
+    background-color: #4C7B8B;
+    padding-left: auto;
+    
+    margin:0;
+    padding-bottom: 2em;
+    
+  }
+  ul{
+    margin:0;
+    background-color: #4C7B8B;
+    padding-left: auto;
+    
+    
+    
+    padding-bottom: 2em;
+  }
+  p::before{
+    content:"          ";
+    white-space: pre;
+  }
+  p{
+    margin:0;
+    background-color: #4C7B8B;
+    padding-left: 15px;
+    padding-right: 70%;
+    width:30%;
+    padding-bottom: 2em;
+    z-index: 0;
+    padding-top: 15px;
+  }
+  .hobbies p{
+    padding-right: 25%;
+    width: 75%;
+  }
+  .page{
+    
+  }
+  .food{
+    background-color: red;
+  }
+  .workingout{
+    background-color: aqua;
+  }
+  .homework{
+    background-color: chocolate;
+  }
