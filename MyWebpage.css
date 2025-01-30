@@ -1,11 +1,11 @@
 body{
-	background-image: url(Ferret.webp);
+	background-image: url(TwoFerret.jpg);
   background-color: #3B6790;
 	background-size: cover;
 	color: black;
 	font-family: Arial, Helvetica, sans-serif;    margin: 5px;
-  margin-right: 0;
   background-attachment: fixed;
+  margin: 30px;
   
     
 }
@@ -30,11 +30,12 @@ table, th, td {
   .center{
 	text-align: center;
 	height: auto;
-	width: 250px;
+	width: 40%;
 	font-family: 'Times New Roman', Times, serif;
     background-color: #4C7B8B;
-    padding-right: 100%;
+    padding-right: 60%;
     padding-bottom:2em;
+    
     
   }
   
@@ -44,6 +45,7 @@ table, th, td {
     font-size: 30pt;
     padding-bottom: 0px;
     margin-bottom: 1px;
+    border-right: 1px solid black;
 	
   }
   h2{
@@ -51,14 +53,15 @@ table, th, td {
     margin: 0;
     box-shadow: -2px -2px;
     z-index: 1;
-    position:relative
+    position:relative;
+    
     
   }
   .center h2{
     background-color: auto;
     text-align: center;
     width: fit-content;
-    margin-left: 25%;
+    margin-left: 42%;
     box-shadow: none;
     border:none;
   }
@@ -124,18 +127,21 @@ table, th, td {
     white-space: pre;
   }
   p{
-    margin:0;
+    margin:0px 30px 0 0;
+    margin-right: 30px;
     background-color: #4C7B8B;
     padding-left: 15px;
-    padding-right: 70%;
-    width:30%;
+    width: 100%;
     padding-bottom: 2em;
     z-index: 0;
     padding-top: 15px;
+    box-sizing: border-box;
   }
   .hobbies p{
-    padding-right: 25%;
-    width: 75%;
+    
+    width: 100%;
+    box-sizing: border-box;
+
   }
   .page{
     
