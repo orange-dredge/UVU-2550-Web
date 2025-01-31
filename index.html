@@ -19,16 +19,64 @@ Reflection: I have some mild experience with web development so this website was
     <head>
         <title>About McKay Rencher</title>
 		<link href="Css/MyWebpage.css" rel="stylesheet">
+		<script>
+			/*document.addEventListener("click", function(e){
+			
+				document.getElementById("demo").style.display= "block";
+				document.getElementById("name").innerHTML = e.target.name;
+				console.log("testing")
+			
+				//event.target.nodeName
+			});*/
+			function ClickOnImage(event){
+				//window.alert(event.target.nodeName);
+				if(event.target.nodeName == "IMG"){
+					document.getElementById("demo").style.display= "block";
+					document.getElementById("exit").style.display= "block";
+					document.getElementById("page").style.filter = "blur(8px)";
+				}else{
+					document.getElementById("demo").style.display= "none";
+					document.getElementById("exit").style.display= "none";
+					document.getElementById("page").style.filter = "blur(0px)";
+				}
+			}
+			function ClickOffImage(){
+				
+			}
+
+			
+
+
+		</script> 
+
     </head>
 	
 	
 
-    <body>
-	<div class="page">
-		<h1>McKay Rencher</h1>
-		<hr>
-		<img src="img/ImageOfMe.jpg" width="400px" height="atuo" alt="this is just a photo of me">
+    <body
+	onclick="ClickOnImage(event)"
+	>
+	<div id="exit">
+		x
+	</div>
+	<img src="img/ImageOfMe.jpg" width="400px" height="atuo" 
+	alt="this is just a photo of me"
+	id="demo"
+	>
 
+	<div id="page">
+		<header>
+			<h1 id="name">McKay Rencher</h1>
+			<hr>
+
+		</header>
+		
+		<img src="img/ImageOfMe.jpg" width="400px" height="atuo" 
+		alt="this is just a photo of me"
+		onclick="ClickOnImage(event)"
+		id="mainImage"
+		>
+		
         <h2>Peronal Info</h2>
 		<ul>
 			<li><strong>Major: </strong>computer science bachelor degree</li>
@@ -151,17 +199,6 @@ Reflection: I have some mild experience with web development so this website was
 
 
 		</Table>
-		<!---
-        <p style = "color:rgb(255, 111, 0); font-family: 'Courier New', Courier, monospace">this <font color = "red">is</font> first paragraph</p>
-        <p>this is the sedond parapgraph</p>
-        <p>part of this text is <b>bold</b></p>
-        <p>part of <font color="#00ff00">this</font> text is <i>italics</i></p>
-        <p><strong> this text is bold</strong></p>
-        <p> <em> this text is italics</em></p>
-        <p> <a href="https://uvu.edu" target="_blank"> text</a> uses <br> br to brake text</p>
-        
-        <p>This paragraph is introducting the html design. &lt;table&gt;</p>
-        <img src="images/Dog.jpeg">-->
 		</div>
     </body>
 
