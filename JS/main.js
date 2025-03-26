@@ -1,3 +1,34 @@
+altLayout = false
+//<link rel="stylesheet" href="Css/SyleSheetDarkMode.css" id="darkModeStyleSheet">
+function toggleSytleSheet(){
+    currentStyleSheet = document.getElementById("currentSyleSheet");
+    if (altLayout == false){
+        console.log("seting to dark mode");
+        //head = document.querySelector("head");
+        StyleSheetLink = document.createElement("link");
+        StyleSheetLink.href = "Css/SyleSheetDarkMode.css";
+        StyleSheetLink.id = "darkModeStyleSheet"
+        StyleSheetLink.rel = "stylesheet"
+        altLayout = true;
+        //currentStyleSheet.remove();
+        document.head.appendChild(StyleSheetLink);
+        //currentStyleSheet.href = "Css/SyleSheetDarkMode.css";
+    }else{
+        darkmode = document.getElementById("darkModeStyleSheet");
+        darkmode.remove();
+        altLayout = false;
+        console.log("switching to normal")
+        //currentStyleSheet.href = "Css/styleSheet.css";
+    }
+}
+
+
+
+
+
+
+
+
 function swapLayout(page){
     var mainImg = document.getElementById("mainImage");
     var mainText = document.getElementsByClassName("mainText");
