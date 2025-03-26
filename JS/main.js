@@ -6,7 +6,7 @@ function toggleSytleSheet(){
         console.log("seting to dark mode");
         //head = document.querySelector("head");
         StyleSheetLink = document.createElement("link");
-        StyleSheetLink.href = "Css/SyleSheetDarkMode.css";
+        StyleSheetLink.href = "Css/Theme.css";
         StyleSheetLink.id = "darkModeStyleSheet"
         StyleSheetLink.rel = "stylesheet"
         altLayout = true;

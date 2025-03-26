@@ -101,7 +101,6 @@ figure{
         background-color: inherit;
         margin: 0px;
         align-items: center;
-        text-align: left;
         flex-basis: 10%;
         align-content: center;
         text-align: center;
@@ -156,9 +155,6 @@ figure{
         padding: 20px;
         background-color: #f8a43f;
         border-radius: 5px;
-    }
-    .bodyGridContainer .iframeContainer iframe{
-    
     }
     .main-body-text{
     background-color: #f8a43f;
