@@ -1,5 +1,13 @@
+//not problems with this javascript was noted in the last project so I have not touched it other than adding log vist page
 altLayout = false
 //<link rel="stylesheet" href="Css/SyleSheetDarkMode.css" id="darkModeStyleSheet">
+
+document.addEventListener("DOMContentLoaded", function(){
+    console.log("initValidation ran")
+    initValidation("lofVistForm");
+});
+
+
 function toggleSytleSheet(){
     currentStyleSheet = document.getElementById("currentSyleSheet");
     if (altLayout == false){
@@ -36,6 +44,8 @@ function swapLayout(page){
     var contact = document.getElementById("contactInfo")
     var  caption = document.getElementById("caption");
 
+    var logVist = document.getElementById("logVist")
+
     var video = document.getElementById("embedded-video");
     var mainImageBox = document.getElementById("main-image-container");
     var mainTextBox = document.getElementById("main-body-text");
@@ -44,6 +54,7 @@ function swapLayout(page){
     mainTextBox.style.display = "block";
     caption.style.display = "none";
     contact.style.display = "none";
+    logVist.style.display = "none";
     
     console.log("page should be = to : " + page);
     if(page == 'main'){
@@ -90,5 +101,10 @@ function swapLayout(page){
         mainTextBox.style.display = "none";
         contact.style.display = "block";
         
+    }
+    if(page == 'logVist'){
+        mainImageBox.style.display = "none";
+        mainTextBox.style.display = "none";
+        logVist.style.display = "flex";
     }
 }

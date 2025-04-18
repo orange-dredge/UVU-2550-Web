@@ -1,7 +1,7 @@
 <!--
-Project:  Project 4
+Project:  Project 5
 Name: McKay Rencher
-Submitted: 3-26-25
+Submitted: 4-18-25
  
 I declare that the following source code was written by me, or provided
 by the instructor for this project. I understand that copying source
@@ -11,6 +11,9 @@ I acknowledge that  If I am found in violation of this policy this may result
 in a zero grade, a permanent record on file and possibly immediate failure of the class.
 
 
+
+
+I added the log Vist section of the code nothing else was added to the html
 
 -->
 
@@ -47,6 +50,7 @@ in a zero grade, a permanent record on file and possibly immediate failure of th
                     <button class="nav-box-content" onclick="swapLayout('video')">Video</button> 
                     <button class="nav-box-content" onclick="swapLayout('contact')">Contact Info</button> 
                     <button class="nav-box-content" onclick="toggleSytleSheet();">Switch Layout</button>
+                    <button class="nav-box-content" onclick="swapLayout('logVist');">Log Vist</button>
                 </nav>
             </aside>
         
@@ -77,6 +81,87 @@ in a zero grade, a permanent record on file and possibly immediate failure of th
                     <p>You can Contact me at <a href="mailto:mckaydrencher@gmail.com" >MckayDRencher@gmail.com</a></p>
                     <details><aside> can contact me 5pm-9pm monday - thursday</aside></details>
                 </section>
+                <section id="logVist">
+                    
+                    <form id="lofVistForm">
+                        
+                        <div class="formSection" id="formLeftSection">
+                            
+                            <div class="row">
+                                <div class="field_name"><label for="firstNameInput">First Name</label></div>
+                                <div class="field_widget"><input type="text" id="firstNameInput" name="firstNameInput"></div>
+                                <div class="errorMessage"></div>
+                            </div>
+                            <div class="row">
+                                <div class="field_name"><label for="lastNameInput">Last Name</label></div>
+                                <div class="field_widget"><input type="text" id="lastNameInput" name="lastNameInput"></div>
+                                <div class="errorMessage"></div>
+                            </div>
+                            <div class="row">
+                                <div class="field_name"><label for="inputPhone">Cell Phone</label></div>
+                                <div class="field_widget"><input type="text" id="inputPhone" name="inputPhone"></div>
+                                <div class="errorMessage"></div>
+                            </div>
+                            <div class="row">
+                                <div class="field_name"><label for="inputEmail">Email</label></div>
+                                <div class="field_widget"><input type="text" id="inputEmail" name="inputEmail"></div>
+                                <div class="errorMessage"></div>
+                            </div>
+
+                            <fieldset class="" id="radioLogVist">
+                                <legend>How did you find us</legend>
+                                <div class="radioButtons">
+                                    <p>Freind</p>
+                                    <input type="radio" name="howFound" value="Freind">
+                                    <p>youtube</p>
+                                    <input type="radio" name="howFound" value="Goontube">
+                                    <p>Google</p>
+                                    <input type="radio"name="howFound" value="Google">
+                                    <p>Ad</p>
+                                    <input type="radio"name="howFound" value="YourDog">
+                                </div>
+                                <div class="errorMessage" id="errorMessageRadio"></div>
+
+                            <!-- </p> -->
+                            </fieldset>
+                        </div>
+                        <div class="formSection" id="formRightSection">
+                            <div class="row">
+                                <div class="field_name"><label for="inputAddress">Address</label></div>
+                                <div class="field_widget"><input type="text" id="inputAddress" name="inputAddress"></div>
+                                <div class="errorMessage"></div>
+                            </div>
+                            <div class="row">
+                                <div class="field_name"><label for="inputCity">City</label></div>
+                                <div class="field_widget"><input type="text" id="inputCity" name="inputCity"></div>
+                                <div class="errorMessage"></div>
+                            </div>
+                            <div class="row">
+                                <div class="field_name"><label for="inputState">State</label></div>
+                                <div class="field_widget"><input type="text" id="inputState" name="inputState"></div>
+                                <div class="errorMessage"></div>
+                            </div>
+                            <div class="row">
+                                <div class="field_name"><label for="inputZip">Zip</label></div>
+                                <div class="field_widget"><input type="number" id="inputZip" name="inputZip"></div>
+                                <div class="errorMessage"></div>
+                            </div>
+                            
+                            
+                            <div class="row">
+                                <div class="field_name"><label for="inputComments">Comments</label></div>
+                                <div class="field_widget"><textarea id="inputComments" name="inputComments"></textarea></div>
+                                <div class="errorMessage"></div>
+                            </div>
+
+                            <p><button type="submit">Submit</button></p>
+                        </div>
+
+
+                        
+                    </form>
+                    <p id="successMessage">Form succesfully sent</p>
+                </section>
             </main>
         </div>
 
@@ -87,5 +172,6 @@ in a zero grade, a permanent record on file and possibly immediate failure of th
 
 
     </footer>
-    <script src="Js/main.js"></script>
+    <script defer src="Js/main.js"></script>
+    <script defer src="Js/validation.js"></script>
 </html>

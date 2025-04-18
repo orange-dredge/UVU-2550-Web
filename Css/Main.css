@@ -1,14 +1,11 @@
 
 /* 
-my base css page was not changed much
-a change layout button was added to the nav to acount for the alt layout of the webpage 
-when you click the switch layout button I refactor the layout of the webpage so all of the changes are listed on that css page
-other then that I change it so the footer would display on the bottom always
-I added this change by making the min size of girdbox larger so that when it has enough room to display it will still be at the bottom
-I also added padding to the contact info text and the footer to make the whole page smother to look 
-I change how the header is displayed to make sure it looks good on moblie(mostly changing how the text is handled so that is will displaywithough wraping)
-changes were also made to make the video display properly on mobile so it will scale to the screen size
+nothing major was changed about the css other then changing it for working with vist log
+also made sure to make it look good on mobile
 */
+*{
+    box-sizing: border-box;
+}
 footer{
     background-color: #202020;
     color: white;
@@ -61,8 +58,103 @@ figure{
     text-align: center;
 }
 
-@media screen and (min-width: 769px){
 
+.formSection{
+    
+    width: 40%;
+    
+    
+    font-size: 1.2em;
+}
+.formSection .row{
+    padding: 5px;
+    padding-bottom: 10px;
+}
+.formSection button{
+    width: 90px;
+    height: 45px;
+    background-color: auto;
+    border-radius: 5px;
+    box-shadow: -1px 1px 5px;
+}
+#radioLogVist{
+    border: none;
+    margin-left: 0px;
+    padding-left: 0px;
+    
+    
+    
+}
+#radioLogVist p{
+    padding-bottom: 0px;
+    margin-bottom: 0;
+    margin-top:10px ;
+    padding-left: 1px;
+    
+}
+.radioButtons{
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+legend{
+    padding-top: 5%;
+}
+
+
+.errorMessage{
+    color: red;
+}
+input.was-validated:invalid {
+    color: red;
+    border: 1px solid red;
+}
+input.was-validated:invalid ~ div {
+    display: block;
+}
+input:valid ~ div {
+    display: none;
+}
+input:invalid ~ div {
+    display: none;
+}
+#successMessage{
+    margin: 25%;
+    font-size: 2em;
+    color: greenyellow;
+    display: none;
+}
+.succuces-vaild{
+    border: 2px solid lightgreen;
+    /* background-color: green; */
+}
+@media screen and (min-width: 769px){
+    #logVist{
+        display: none;
+        justify-content: center;
+        width: 100vw;
+        
+    }
+    .row textarea{
+        width: 80%;
+        height: 140px;
+        box-shadow: -1px 1px 2px;
+    }
+    .row input{
+        width: 60%;
+        height: 30px;
+        box-shadow: -1px 1px 2px;
+    }
+    #lofVistForm{
+        display: flex;
+        flex-direction: row;
+        width: 85vw;
+        justify-content: center;
+        margin: auto;
+        margin-top: 50px;
+        background-color: #ffad48dd;
+        border-radius: 5px;
+        padding:50px;
+    }
     #top-of-header img{
     width: 70px;
     height: auto;
@@ -181,6 +273,35 @@ figure{
 }
 
 @media screen and (max-width: 768px){
+    #logVist{
+        box-sizing: border-box;
+        display: none;
+        justify-content: left;
+        width: 100vw;
+        
+    }
+    .row textarea{
+        width: 80vw;
+        height: 140px;
+        box-shadow: -1px 1px 2px;
+    }
+    .row input{
+        width: 80vw;
+        height: 40px;
+        box-shadow: -1px 1px 2px;
+    }
+    #lofVistForm{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        margin: auto;
+        margin-top: 0px;
+        background-color: #ffad48dd;
+        border-radius: 5px;
+        padding:50px;
+    }
     iframe{
         width: 80vw;
         height: 60vw;

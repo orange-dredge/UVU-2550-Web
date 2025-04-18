@@ -1,13 +1,5 @@
 /*
-To start I change the webpage css using JS to toggle back and forth when pressing the switch layout button
-I change the colors of the entire web page. I used css var to do this quickly I focased on this being more of lightmode. so dark colors were changed to close to white and the main orange color I use was changed to be lighter
-I also changed around the shadows to look acount for much of the changes the navbox image-box and main-text box all had their box shadows changed
-I also changed the layout of my webpage. I did this by moving the nav to the left with a flex box
-with this came change the layout of the nav to change depending on screen size and also left align the text with some left padding and adding some borders
-I also reomved the grid gap between the img containter and the text container
-I also changed the header to be centered as without the nav on top I think it looks better this way
-a bunch of small changes were made to acount for the mobile version of the website for example box shadows were changed and the size of the element were changed
-
+small changes to acomadate the side bar for version of the page
 */
 
 :root{
@@ -67,6 +59,12 @@ figure img{
 .nav-box-content{
     border-bottom: 1px solid black;
 }
+#successMessage{
+    margin: 25%;
+    font-size: 2em;
+    color: green;
+    display: none;
+}
 
 @media screen and (min-width: 769px){
     
@@ -78,7 +76,6 @@ figure img{
         flex-direction: column;
         height: var(--mainContentSize);
         max-height: var(--mainContentSize);
-        /*border-bottom: 2px black solid;   */
     }
 
     .nav-box-content{
@@ -116,6 +113,19 @@ figure img{
 }
 
 @media screen and (max-width: 768px){
+    #logVist{
+
+        width: 85vw;
+        
+    }
+    .row textarea{
+        width: 60vw;
+    }
+    .row input{
+        width: 60vw;
+        height: 40px;
+        box-shadow: -1px 1px 2px;
+    }
     iframe{
         width: 60vw;
         height: 35vw;
